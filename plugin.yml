@@ -1,0 +1,15 @@
+name: HomeSystem
+version: 1.0.0
+main: ClexaGod\HomeSystem\Main
+api: 5.0.0
+author: ClexaGod
+
+commands:
+  home:
+    description: Home system main menu
+    usage: /home
+    permission: homesystem.use
+
+permissions:
+  homesystem.use:
+    default: true

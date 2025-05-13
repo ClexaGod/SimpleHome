@@ -1,0 +1,16 @@
+# Basic settings
+settings:
+  max-homes: 5  # Maximum number of houses for all players
+  teleport-delay: 3 # Teleportation delay (seconds)
+  log-teleports: true # Record teleportations
+
+# Worlds that can be saved at home
+allowed-worlds:
+  - "world"
+  - "plots"
+
+# Teleportation effects
+effects:
+  enabled: true
+  particles: true
+  sound: true
