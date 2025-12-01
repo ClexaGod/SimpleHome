@@ -20,7 +20,7 @@
 
 **SimpleHome** is a production-ready, fully graphical home management plugin written in **Kotlin**. It leverages the **PowerNukkitX Form API** to replace complex commands with an intuitive UI. Designed for modern servers, it offers a seamless experience with cinematic teleportation effects, strict input validation, and secure UUID-based data storage.
 
-## Key Features
+## Features
 
 ### 🖥️ Professional User Interface (Form API)
 *   **Interactive Forms:** Manage homes effortlessly via `SimpleForm` and `CustomForm` interfaces.
