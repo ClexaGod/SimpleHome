@@ -54,7 +54,7 @@
 
 ## Installation
 
-1.  Download the latest **`simplehome-1.0.0.jar`** from the [Releases](https://github.com/ClexaGod/SimpleHome/releases) page.
+1.  Download the latest **`simplehome-1.0.1.jar`** from the [Releases](https://github.com/ClexaGod/SimpleHome/releases) page.
 2.  Upload the file to your server's `plugins` folder.
 3.  Restart the server.
 4.  (Optional) Configure `config.yml` to match your server's needs.
@@ -104,7 +104,7 @@ cd SimpleHome
 mvn clean package
 ```
 
-The compiled plugin will be generated in `target/simplehome-1.0.0.jar`.
+The compiled plugin will be generated in `target/simplehome-1.0.1.jar`.
 
 ---
 
