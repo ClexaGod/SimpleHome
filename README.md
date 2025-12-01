@@ -7,7 +7,7 @@
 ![Language](https://img.shields.io/badge/Language-Kotlin_1.9-purple.svg?style=flat-square)
 ![Version](https://img.shields.io/badge/Version-1.0.0-orange.svg?style=flat-square)
 
-**The Ultimate Home Management Plugin for Minecraft Bedrock (PowerNukkitX)**
+**The Ultimate Home Management Plugin for PowerNukkitX**
 *User-Friendly UI • Immersive Effects • Secure Data • High Performance*
 
 [Download](#installation) • [Features](#features) • [Configuration](#configuration)
@@ -40,13 +40,13 @@
 
 ---
 
-## Screenshots
-
 <div align="center">
 
-| **Main Menu** | **Home List** | **Edit Home** |
-| :---: | :---: | :---: |
-| <img src="assets/home_menu.jpg" width="250" alt="SimpleHome Main Menu"> | <img src="assets/home_list.jpg" width="250" alt="SimpleHome List UI"> | <img src="assets/edit_home.jpg" width="250" alt="Edit Home Settings"> |
+<img src="assets/home_menu.jpg" width="700" alt="SimpleHome UI">
+<br><br>
+<img src="assets/home_list.jpg" width="700" alt="SimpleHome List">
+<br><br>
+<img src="assets/edit_home.jpg" width="700" alt="SimpleHome Edit">
 
 </div>
 
@@ -110,7 +110,7 @@ The compiled plugin will be generated in `target/simplehome-1.0.0.jar`.
 
 <div align="center">
 
-**Keywords:** *PowerNukkitX, Minecraft Bedrock, PNX Plugin, Home System, Teleport UI, Kotlin, Form API, GUI, SimpleHome*
+**Keywords:** *PowerNukkitX, PNX Plugin, Home System, Teleport UI, Kotlin, Form API, GUI, SimpleHome, Bedrock Edition*
 
 Made with ❤️ by **ClexaGod** for the PowerNukkitX Community.
 
