@@ -5,7 +5,7 @@
 ![License](https://img.shields.io/badge/License-Apache_2.0-green.svg?style=flat-square)
 ![Platform](https://img.shields.io/badge/Platform-PowerNukkitX-blue.svg?style=flat-square)
 ![Language](https://img.shields.io/badge/Language-Kotlin_1.9-purple.svg?style=flat-square)
-![Version](https://img.shields.io/badge/Version-1.0.0-orange.svg?style=flat-square)
+![Version](https://img.shields.io/badge/Version-1.0.1-orange.svg?style=flat-square)
 
 **The Ultimate Home Management Plugin for PowerNukkitX**
 *User-Friendly UI • Immersive Effects • Secure Data • High Performance*
