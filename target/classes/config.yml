@@ -1,0 +1,18 @@
+# SimpleHome Configuration
+
+# Basic settings
+settings:
+  max-homes: 5  # Maximum number of homes per player
+  teleport-delay: 3 # Teleportation delay (seconds)
+  log-teleports: true # Record teleportations to log file
+
+# Worlds where setting home is allowed
+allowed-worlds:
+  - "world"
+  - "plots"
+  - "nether"
+
+# Teleportation effects
+effects:
+  particles: true
+  sound: true
