@@ -35,7 +35,7 @@ class SimpleHome : PluginBase() {
         
         server.pluginManager.registerEvents(EventListener(this), this)
 
-        logger.info("${TextFormat.GREEN}SimpleHome ${TextFormat.RED}(https://github.com/ClexaGod/PowernukkitX-SimpleHome) ${TextFormat.GREEN}enabled successfully!")
+        logger.info("${TextFormat.GREEN}SimpleHome ${TextFormat.RED}(https://github.com/ClexaGod/SimpleHome) ${TextFormat.GREEN}enabled successfully!")
     }
 
     override fun onDisable() {

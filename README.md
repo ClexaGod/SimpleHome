@@ -54,7 +54,7 @@
 
 ## Installation
 
-1.  Download the latest **`simplehome-1.0.0.jar`** from the [Releases](https://github.com/ClexaGod/PowerNukkitX-SimpleHome/releases) page.
+1.  Download the latest **`simplehome-1.0.0.jar`** from the [Releases](https://github.com/ClexaGod/SimpleHome/releases) page.
 2.  Upload the file to your server's `plugins` folder.
 3.  Restart the server.
 4.  (Optional) Configure `config.yml` to match your server's needs.
@@ -99,8 +99,8 @@ effects:
 Required: **JDK 21** and **Maven**.
 
 ```bash
-git clone https://github.com/ClexaGod/PowerNukkitX-SimpleHome.git
-cd PowerNukkitX-SimpleHome
+git clone https://github.com/ClexaGod/SimpleHome.git
+cd SimpleHome
 mvn clean package
 ```
 
