@@ -1,6 +1,6 @@
 name: SimpleHome
 main: com.ClexaGod.simplehome.SimpleHome
-version: 1.0.1
+version: 1.1.0
 api: ["2.0.0"]
 author: ClexaGod
 description: Advanced Home System with UI for PowerNukkitX

@@ -81,6 +81,24 @@ class HomeManager(private val plugin: SimpleHome) {
         return getHomes(player).size
     }
 
+    fun getMaxHomes(player: Player): Int {
+        if (player.isOp) {
+            return Int.MAX_VALUE
+        }
+
+        var max = plugin.configManager.defaultLimit
+        val customLimits = plugin.configManager.homeLimits
+
+        for ((group, limit) in customLimits) {
+            if (player.hasPermission("simplehome.limit.$group")) {
+                if (limit > max) {
+                    max = limit
+                }
+            }
+        }
+        return max
+    }
+
     fun homeExists(player: Player, homeName: String): Boolean {
         return getHomes(player).containsKey(homeName)
     }

@@ -1,0 +1,19 @@
+# Maven build directory
+target/
+dependency-reduced-pom.xml
+
+# IDE settings
+.idea/
+*.iml
+.vscode/
+.settings/
+.classpath
+.project
+
+# System files
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+teleport_logs.yml

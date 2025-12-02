@@ -11,10 +11,11 @@ class MainMenu(private val plugin: SimpleHome, private val ui: HomeUI) {
 
     fun open(player: Player) {
         val homeCount = plugin.homeManager.getHomeCount(player)
-        val maxHomes = plugin.configManager.maxHomes
+        val maxHomes = plugin.homeManager.getMaxHomes(player)
+        val maxDisplay = if (maxHomes == Int.MAX_VALUE) "Unlimited" else maxHomes.toString()
         val descriptionColor = TextFormat.DARK_AQUA
 
-        val window = SimpleForm("Home", "${TextFormat.GRAY}Select an action:\n\n${TextFormat.GRAY}Homes: ${TextFormat.WHITE}$homeCount/$maxHomes")
+        val window = SimpleForm("Home System", "${TextFormat.GRAY}Select an action:\n\n${TextFormat.GRAY}Homes: ${TextFormat.WHITE}$homeCount/$maxDisplay")
         
         window.addButton("My Homes\n${descriptionColor}Click to teleport", ButtonImage(ButtonImage.Type.PATH, "textures/ui/worldsIcon"))
         window.addButton("Set Home\n${descriptionColor}Add new home", ButtonImage(ButtonImage.Type.PATH, "textures/ui/realms_green_check"))

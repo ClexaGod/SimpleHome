@@ -10,9 +10,9 @@ class SetHomeForm(private val plugin: SimpleHome) {
 
     fun open(player: Player) {
         val homeCount = plugin.homeManager.getHomeCount(player)
-        val maxHomes = plugin.configManager.maxHomes
+        val maxHomes = plugin.homeManager.getMaxHomes(player)
 
-        if (homeCount >= maxHomes) {
+        if (maxHomes != Int.MAX_VALUE && homeCount >= maxHomes) {
             player.sendMessage("${TextFormat.RED}You have reached the maximum number of homes ($maxHomes)!")
             return
         }
@@ -22,8 +22,9 @@ class SetHomeForm(private val plugin: SimpleHome) {
             return
         }
 
+        val remainingDisplay = if (maxHomes == Int.MAX_VALUE) "Unlimited" else (maxHomes - homeCount).toString()
         val window = CustomForm("Set Home")
-        window.addElement(ElementInput("Home Name", "Remaining: ${maxHomes - homeCount}", ""))
+        window.addElement(ElementInput("Home Name", "Remaining: $remainingDisplay", ""))
         
         window.onSubmit { p, response ->
             if (response == null) return@onSubmit

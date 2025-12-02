@@ -5,10 +5,14 @@
 ![License](https://img.shields.io/badge/License-Apache_2.0-green.svg?style=flat-square)
 ![Platform](https://img.shields.io/badge/Platform-PowerNukkitX-blue.svg?style=flat-square)
 ![Language](https://img.shields.io/badge/Language-Kotlin_1.9-purple.svg?style=flat-square)
+<<<<<<< HEAD
 ![Version](https://img.shields.io/badge/Version-1.0.1-orange.svg?style=flat-square)
+=======
+![Version](https://img.shields.io/badge/Version-1.1.0-orange.svg?style=flat-square)
+>>>>>>> 74b2093 (Add permission-based home limits and teleport cancel sound)
 
 **The Ultimate Home Management Plugin for PowerNukkitX**
-*User-Friendly UI • Immersive Effects • Secure Data • High Performance*
+*User-Friendly UI • Immersive Effects • Dynamic Limits • Secure Data*
 
 [Download](#installation) • [Features](#features) • [Configuration](#configuration)
 
@@ -18,7 +22,7 @@
 
 ## Overview
 
-**SimpleHome** is a production-ready, fully graphical home management plugin written in **Kotlin**. It leverages the **PowerNukkitX Form API** to replace complex commands with an intuitive UI. Designed for modern servers, it offers a seamless experience with cinematic teleportation effects, strict input validation, and secure UUID-based data storage.
+**SimpleHome** is a production-ready, fully graphical home management plugin written in **Kotlin**. It leverages the **PowerNukkitX Form API** to replace complex commands with an intuitive UI. Designed for modern servers, it offers a seamless experience with cinematic teleportation effects, group-based home limits, and secure UUID-based data storage.
 
 ## Features
 
@@ -28,15 +32,21 @@
 *   **Smart Navigation:** Integrated "Back" buttons and intuitive flow for better User Experience (UX).
 *   **Visual Customization:** Assign distinct icons to homes for quick recognition in the list.
 
+### 🚀 Dynamic Home Limits (New in v1.1.0)
+*   **Group-Based Limits:** Assign different home limits to player groups (e.g., VIPs get 5 homes, MVPs get 10) via permissions (`simplehome.limit.vip`).
+*   **OP Privilege:** Server operators automatically have **unlimited** homes.
+*   **Live UI Updates:** The interface displays "Unlimited" or remaining counts dynamically based on the player's rank.
+
 ### ✨ Immersive Teleportation Experience
 *   **Pre-Teleport Effects:** A dynamic **DNA-Helix particle animation** (`EnchantmentTable` & `Portal` particles) circles the player during warmup.
 *   **Audio Feedback:** A "Minigame-style" countdown with rising pitch sound effects (`Note Pling`) builds anticipation.
-*   **Arrival Impact:** Successful teleportation is marked by a burst of `ElectricSpark` particles and a resonant sound effect, providing immediate feedback.
+*   **Arrival Impact:** Successful teleportation is marked by a burst of `ElectricSpark` particles and a resonant sound effect.
+*   **Cancellation Feedback:** A distinct bass sound alerts the player if teleportation is cancelled due to movement or damage.
 
 ### 🛡️ Security & Reliability
-*   **Input Sanitization:** Forces strict Regex validation (`[a-zA-Z0-9_-]`) on home names to prevent invisible characters or exploits.
-*   **UUID-Based Storage:** Player data is stored in `players/PlayerName.yml` but indexed internally by **UUID**, ensuring data persists even if a player changes their Gamertag.
-*   **World Whitelist:** Strictly enforces an "Allowed Worlds" policy, preventing players from setting homes in restricted areas (e.g., PvP arenas, mini-games).
+*   **Input Sanitization:** Forces strict Regex validation (`[a-zA-Z0-9_-]`) on home names to prevent invisible characters.
+*   **UUID-Based Storage:** Player data is stored in `players/PlayerName.yml` but indexed internally by **UUID**, ensuring data persistence across name changes.
+*   **World Whitelist:** Strictly enforces an "Allowed Worlds" policy to prevent exploiting restricted areas.
 
 ---
 
@@ -54,10 +64,14 @@
 
 ## Installation
 
+<<<<<<< HEAD
 1.  Download the latest **`simplehome-1.0.1.jar`** from the [Releases](https://github.com/ClexaGod/SimpleHome/releases) page.
+=======
+1.  Download the latest **`simplehome-1.1.0.jar`** from the [Releases](https://github.com/ClexaGod/SimpleHome/releases) page.
+>>>>>>> 74b2093 (Add permission-based home limits and teleport cancel sound)
 2.  Upload the file to your server's `plugins` folder.
 3.  Restart the server.
-4.  (Optional) Configure `config.yml` to match your server's needs.
+4.  Configure permissions and limits in `config.yml`.
 
 ---
 
@@ -66,6 +80,11 @@
 | Command | Description | Permission | Default |
 | :--- | :--- | :--- | :--- |
 | **`/home`** | Opens the main Home UI. | `simplehome.command.home` | `true` (Everyone) |
+
+### Limit Permissions
+Define custom limits in `config.yml`, then assign the corresponding permission:
+*   `simplehome.limit.vip` -> Sets limit to 5 (example)
+*   `simplehome.limit.mvp` -> Sets limit to 10 (example)
 
 ---
 
@@ -77,9 +96,17 @@ The `config.yml` allows full control over the plugin's behavior.
 # SimpleHome Configuration File
 
 settings:
-  max-homes: 5          # Maximum number of homes a player can set
   teleport-delay: 3     # Warmup time in seconds before teleporting
   log-teleports: true   # Enable/Disable logging of teleport actions to 'teleport_logs.yml'
+
+# Home Limits Configuration (New in v1.1.0)
+# Define groups and their home limits here.
+# Assign permission 'simplehome.limit.<group_name>' to players.
+# Operators (OP) always have unlimited homes.
+home-limits:
+  default: 3
+  vip: 5
+  mvp: 10
 
 # World Whitelist: Players can ONLY set homes in these worlds.
 allowed-worlds:
@@ -104,7 +131,11 @@ cd SimpleHome
 mvn clean package
 ```
 
+<<<<<<< HEAD
 The compiled plugin will be generated in `target/simplehome-1.0.1.jar`.
+=======
+The compiled plugin will be generated in `target/simplehome-1.1.0.jar`.
+>>>>>>> 74b2093 (Add permission-based home limits and teleport cancel sound)
 
 ---
 

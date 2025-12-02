@@ -81,6 +81,10 @@ class TeleportManager(private val plugin: SimpleHome) {
             plugin.server.scheduler.cancelTask(taskId)
             teleportingPlayers.remove(player.name)
             player.sendMessage("${TextFormat.RED}Teleportation cancelled: $reason")
+            
+            if (plugin.configManager.isSoundEnabled) {
+                player.level.addSound(player, Sound.NOTE_BASS, 1f, 0.8f)
+            }
         }
     }
 

@@ -4,8 +4,23 @@ import com.ClexaGod.simplehome.SimpleHome
 
 class ConfigManager(private val plugin: SimpleHome) {
 
-    val maxHomes: Int
-        get() = plugin.config.getInt("settings.max-homes", 5)
+    val defaultLimit: Int
+        get() = plugin.config.getInt("home-limits.default", 3)
+
+    val homeLimits: Map<String, Int>
+        get() {
+            val section = plugin.config.getSection("home-limits")
+            val limits = mutableMapOf<String, Int>()
+            
+            if (section != null) {
+                for (key in section.keys) {
+                    if (key != "default") {
+                        limits[key] = plugin.config.getInt("home-limits.$key")
+                    }
+                }
+            }
+            return limits
+        }
 
     val teleportDelay: Int
         get() = plugin.config.getInt("settings.teleport-delay", 3)
