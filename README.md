@@ -5,11 +5,7 @@
 ![License](https://img.shields.io/badge/License-Apache_2.0-green.svg?style=flat-square)
 ![Platform](https://img.shields.io/badge/Platform-PowerNukkitX-blue.svg?style=flat-square)
 ![Language](https://img.shields.io/badge/Language-Kotlin_1.9-purple.svg?style=flat-square)
-<<<<<<< HEAD
-![Version](https://img.shields.io/badge/Version-1.0.1-orange.svg?style=flat-square)
-=======
 ![Version](https://img.shields.io/badge/Version-1.1.0-orange.svg?style=flat-square)
->>>>>>> 74b2093 (Add permission-based home limits and teleport cancel sound)
 
 **The Ultimate Home Management Plugin for PowerNukkitX**
 *User-Friendly UI • Immersive Effects • Dynamic Limits • Secure Data*
@@ -64,11 +60,7 @@
 
 ## Installation
 
-<<<<<<< HEAD
-1.  Download the latest **`simplehome-1.0.1.jar`** from the [Releases](https://github.com/ClexaGod/SimpleHome/releases) page.
-=======
 1.  Download the latest **`simplehome-1.1.0.jar`** from the [Releases](https://github.com/ClexaGod/SimpleHome/releases) page.
->>>>>>> 74b2093 (Add permission-based home limits and teleport cancel sound)
 2.  Upload the file to your server's `plugins` folder.
 3.  Restart the server.
 4.  Configure permissions and limits in `config.yml`.
@@ -131,11 +123,7 @@ cd SimpleHome
 mvn clean package
 ```
 
-<<<<<<< HEAD
-The compiled plugin will be generated in `target/simplehome-1.0.1.jar`.
-=======
 The compiled plugin will be generated in `target/simplehome-1.1.0.jar`.
->>>>>>> 74b2093 (Add permission-based home limits and teleport cancel sound)
 
 ---
 
